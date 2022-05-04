@@ -1,6 +1,6 @@
-# 安装
+# Install
 
-## 下载
+## Download
 
 * wget https://bitcoincore.org/bin/bitcoin-core-0.21.1/bitcoin-0.21.1-x86_64-linux-gnu.tar.gz
 * tar -zxvf bitcoin-0.21.1-x86_64-linux-gnu.tar.gz
@@ -9,9 +9,10 @@
 * ln -s bitcoin/bin/bitcoind /usr/local/bin/bitcoind
 * ln -s bitcoin/bin/bitcoin-cli /usr/local/bin/bitcoin-cli
 
-## 配置
+## Configure
 
 * vim .bitcoin/bitcoin.conf
+
 ```
 server=1
 txindex=1
@@ -26,7 +27,7 @@ rpcallowip=0.0.0.0/0
 rpcport=18443
 ```
 
-## 命令
+## Command
 
 * bitcoind -daemon # 后台运行
 * bitcoin-cli stop # 停止
@@ -43,9 +44,10 @@ rpcport=18443
   * gettransaction # 获取交易
   * decodescript # 解码脚本
 
-## 别名（可选）
+## Alias (optional)
 
 * vim .bashrc
+
 ```
 alias bcli='bitcoin-cli -regtest'
 ```
